@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image:url(photo-1485470733090-0aae1788d5af.avif);
+            background-size: cover;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            /* background-color: #00bfa6; */
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(30px);
+            box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+            border: 2px solid rgba(255, 255, 255, 0.18);
+        }
+
+        li {
+            list-style: none;
+            cursor: pointer;
+            color: white;
+            font-weight: bolder;
+        }
+
+        li:first-child {
+            padding-left: 30px;
+        }
+
+        .main {
+            height: 520px;
+            width: 520px;
+            border: 2px solid rgb(247, 244, 244);
+        }
+
+        .first {
+            display: flex;
+            margin: 16px;
+            gap: 20px;
+            height: 600px;
+
+        }
+
+        .second_div {
+            margin-left: 180px;
+        }
+
+        .second {
+           
+            margin: 16px;
+            height: 600px;
+         
+        }
+    
+        .content{
+            padding: 200PX;
+            height: 120px;
+            border: 2px solid rgb(245, 243, 243);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bolder;
+            font-size: 50px;
+            text-align:center;
+        }
+.footer{
+    background-color: blueviolet;
+    
+}
+footer>div{
+    height: 80px;
+}
+.img2{
+    height: 50px;
+    position: fixed;
+    bottom:10px;
+    right: 20px;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Course</li>
+        </ul>
+    </nav>
+    <section class="first">
+        <div class="main"> i am first div</div>
+        <div class="second_div main">i am second div</div>
+       <div><img class="img2" src="WhatsApp.jpg" alt=""></div> 
+    </section>
+    <section class="second">
+        <div class="content">Welcome to this Sigma Web Development Express</div>
+
+    </section>
+    <footer class="footer">
+        <div>this is footer</div>
+    </footer>
+</body>
+
+</html>
